@@ -7,6 +7,14 @@
 <link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css" />
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script>
+$.mobile.loading( 'show', {
+	text: 'foo',
+	textVisible: true,
+	theme: 'z',
+	html: ""
+});
+</script>
 </head>
 
 <body>
@@ -19,12 +27,12 @@
       <div class="ui-block-a">
         <p>Supongamos que la frecuencia de los cambios que realizamos a nuestro código determina la cantidad de <em>commits</em> que podemos efectuar en el repositorio. Lo ideal sería que por cada   nuevo cambio significativo en el código o estructura de archivos,   registremos lo que hicimos agregando los archivos afectados con una   descripción puntual, breve y clara de lo realizado.</p>
         <p>Si por ejemplo hay que mover un archivo de lugar, o simplemente le   cambiamos de nombre debemos asegurarnos de tener el historial de cambios   limpio antes de proceder.</p>
-        <p><a href="#page2" data-role="button" data-icon="arrow-r" data-iconpos="right">Leer más</a></p>
+        <p><a class="show-page-loading-msg" href="#page2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-transition="slidedown" data-mini="true" data-msgtext="Text only loader">Leer más</a></p>
       </div>
       <div class="ui-block-b">
         <p>En los siguientes artículos iremos viendo estos dos puntos a detalle, sobre todo el manejo de ramas a nivel básico usando <strong>branch</strong>, <strong>checkout</strong>, <strong>rebase</strong> y <strong>merge</strong> para lograr un flujo de trabajo mas flexible así como diversas técnicas   y recomendaciones para un registro de cambios mas efectivo con <strong>commit</strong>, <strong>cherry-pick</strong>, <strong>reset</strong>, <strong>diff</strong>, <strong>show</strong> y <strong>log</strong>.</p>
         <p>Una vez tengamos dominado el flujo de trabajo básico de manera local   podremos continuar con la obtención, publicación y actualización de   repositorios con <strong>remote</strong>, <strong>fetch</strong>, <strong>pull</strong> y <strong>push</strong>.</p>
-        <p><a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right">Leer más</a></p>
+        <p><a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Leer más</a></p>
       </div>
     </div>
   </div>
